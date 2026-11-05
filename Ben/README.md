@@ -2,11 +2,17 @@ This README file and is used to provide commentary on the relevant code exercise
 
 Exercise 1
 
+This maps the behaviour of a particle when moving towards a potential, paths calculated using RK4. 
+
 ---
 
 Exercise 2
 
 For exercise 2 I  have combined the numerical calculations of the derivative with the analytic one using JAX and have compared the results. 
+
+Final angle: -0.19925086
+Finite difference derivative: -0.013127923
+JAX derivative: -0.013757351
 
 ---
 
