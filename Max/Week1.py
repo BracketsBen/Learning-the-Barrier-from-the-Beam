@@ -59,11 +59,11 @@ RK4(r0, v0, t0, dt)
 
 # Create 'random' r0s and v0s and then plot them by using RK4 function (Added after week 1)
 rng = np.random.default_rng(42)
-N = 20
+N = 18
 r0s = np.array([np.ones(N) * -L, rng.uniform(-L,L,N)]).T
 v0s = np.array([rng.uniform(0.5,3,N), rng.uniform(-3,3,N)]).T
 
-for i in range(20):
+for i in range(N):
     RK4(r0s[i], v0s[i], 0, 0.01)
 
 # Contour plot of the potential, V
@@ -79,6 +79,10 @@ while n<2:
     n += 0.2
 
 plt.contour(X,Y,Z, levels=ls)
+
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Trajectories of particles using RK4")
 
 plt.xlim([-3,5])
 plt.ylim([-4,4])
