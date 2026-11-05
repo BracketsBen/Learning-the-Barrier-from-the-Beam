@@ -8,7 +8,7 @@ This maps the behaviour of a particle when moving towards a potential, paths cal
 
 ---
 
-Exercise 2
+<ins>Exercise 2</ins>
 
 For exercise 2 I  have combined the numerical calculations of the derivative with the analytic one using JAX and have compared the results. 
 
@@ -18,11 +18,11 @@ JAX derivative: -0.013757351
 
 ---
 
-Exercise 3
+<ins>Exercise 3</ins>
 
 ---
 
-Exercise 4
+<ins>Exercise 4</ins>
 
 Questions:
 - **Why should the initial W be random rather than 0?**
