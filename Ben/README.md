@@ -24,6 +24,8 @@ JAX derivative: -0.013757351
 
 <ins>Exercise 4</ins>
 
+The following plots refers to the values used in the code supplied. 
+
 ![Neural network approx](Figure_2.png)
 
 Questions:
