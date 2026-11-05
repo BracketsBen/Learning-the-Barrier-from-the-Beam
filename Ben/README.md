@@ -24,6 +24,8 @@ JAX derivative: -0.013757351
 
 <ins>Exercise 4</ins>
 
+![Neural network approx](Figure_2.png)
+
 Questions:
 - **Why should the initial W be random rather than 0?**
   All the neurons would end up holding the same value, eliminating the benefit of having many neurons in the first place
@@ -31,5 +33,7 @@ Questions:
   It does not have to lie in the range -1 to 1 (and indeed, should not). 
 
  Model performance:
+
+ 
  
 
