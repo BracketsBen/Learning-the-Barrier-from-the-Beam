@@ -18,6 +18,10 @@ JAX derivative: -0.013757351
 
 Exercise 3
 
+---
+
+Exercise 4
+
 Questions:
 - **Why should the initial W be random rather than 0?**
   All the neurons would end up holding the same value, eliminating the benefit of having many neurons in the first place
