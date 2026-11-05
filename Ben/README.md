@@ -1,6 +1,6 @@
 
 
-Exercise 1
+<ins>Exercise 1<\ins>
 
 This maps the behaviour of a particle when moving towards a potential, paths calculated using RK4. 
 
