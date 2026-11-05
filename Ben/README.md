@@ -4,7 +4,7 @@
 
 This maps the behaviour of a particle when moving towards a potential, paths calculated using RK4. 
 
-![Particle trajectories](images/Figure_1.png)
+![Particle trajectories](Figure_1.png)
 
 ---
 
