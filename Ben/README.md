@@ -26,7 +26,7 @@ JAX derivative: -0.013757351
 
 The following plots refers to the values used in the code supplied. 
 
-![Neural network approx](Figure_2.png)  ![Loss function](Figure_3.png) 
+<img src="Figure_2.png" width="45%"> <img src="Figure_3.png" width="45%">
 
 Questions:
 - **Why should the initial W be random rather than 0?**
