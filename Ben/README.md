@@ -38,6 +38,9 @@ Different factors affected the model performance:
 
 Increasing the value of x:
 
+<img src="Larger X loss.png" width="45%"> <img src="Larger x values.png" width="45%">
+
+
 
 
 
