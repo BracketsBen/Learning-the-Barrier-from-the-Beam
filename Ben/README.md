@@ -36,9 +36,11 @@ Questions:
 
 Different factors affected the model performance:
 
-Increasing the value of x:
+**Increasing the value of x:**
 
 <img src="Larger X loss.png" width="45%"> <img src="Larger x values.png" width="45%">
+
+Model performance, decreased, given that the neural network has a more difficult job of approximating over a larger range of values. 
 
 
 
