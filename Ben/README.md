@@ -42,7 +42,11 @@ Different factors affected the model performance:
 
 Model performance, decreased, given that the neural network has a more difficult job of approximating over a larger range of values. 
 
-**Decreasing the number of data points**
+**Decreasing the number of data points**#
+
+<img src="Fewer data points.png" width="45%"> <img src="Fewer data points loss.png" width="45%">
+
+
 
 
 
