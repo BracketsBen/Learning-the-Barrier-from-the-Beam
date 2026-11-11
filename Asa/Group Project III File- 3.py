@@ -180,3 +180,9 @@ plt.title("Neural Network Curve Fitting")
 plt.legend()
 plt.grid(True)
 plt.show()
+
+#originally used a 70/15/15 split, however after testing a 50/25/25 split, the loss of the test data drops significantly- from 0.0144 to 0.0109
+#need to ask whether testing the splits is helpful or not, and what is the best choice for number of neurons- I'm not quite sure what the difference between
+#say 16, 32, 64 etc
+#I presume that more neurons could introduce overfitting- as the loss for training, validating and testing is low it seems 16 is a good baseline- I will have a
+#play about with this however and see, but I'd rather understand it properly
