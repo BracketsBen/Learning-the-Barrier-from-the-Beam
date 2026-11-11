@@ -49,6 +49,9 @@ def V_true(x,y): # Defining the true potential from equation 5
 dVdx = jax.grad(V_true, argnums=0)
 dVdy = jax.grad(V_true, argnums=1)
 
+def force(x,y):
+    return jnp.array([-dVdx(x,y), -dVdy(x,y)])
+
 def dVdx_hand(x,y):
     e1 = jnp.exp(-0.5 * (x ** 2 + (y + 1.5) ** 2) / (0.8 ** 2))
     e2 = jnp.exp(-0.5 * ((x - 0.5) ** 2+(y - 1) ** 2) / (0.8 ** 2))
@@ -60,3 +63,4 @@ def dVdy_hand(x,y):
 
 x, y = [1.0,3.0]
 print("Jax ∂V/∂x: ", dVdx(x,y),"Hand ∂V/∂x", dVdx_hand(x,y), "Jax ∂V/∂y: ", dVdy(x,y), "Hand ∂V/∂y: ", dVdy_hand(x,y))
+print(force(x,y))
