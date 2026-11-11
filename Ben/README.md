@@ -34,7 +34,11 @@ Questions:
 - **Why do we not need to apply the activation function to the last layer?**
   It does not have to lie in the range -1 to 1 (and indeed, should not). 
 
-Different factors affected the model performance
+Different factors affected the model performance:
+
+Increasing the value of x:
+
+
 
 
 
