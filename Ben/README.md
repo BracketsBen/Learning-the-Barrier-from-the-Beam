@@ -49,6 +49,15 @@ Model performance, decreased, given that the neural network has a more difficult
 **Decreasing the learning rate**
 
 
+**Decreasing the learning rate, but increasing the number of iterations**
+
+
+
+
+
+
+
+
 
 
 
