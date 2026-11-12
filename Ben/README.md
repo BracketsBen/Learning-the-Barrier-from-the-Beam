@@ -50,6 +50,8 @@ Model performance, decreased, given that the neural network has a more difficult
 
 <img src="Lower learning rate.png" width="45%"> <img src="Lower learning rate loss.png" width="45%">
 
+Here we have that decreasing the learning rate reduced the model performance. This is because decreasing the learning rate made the weights of the model less sensitive to change, and so improved at a slower rate. 
+
 
 
 **Decreasing the learning rate, but increasing the number of iterations**
