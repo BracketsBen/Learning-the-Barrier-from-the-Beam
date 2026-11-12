@@ -48,8 +48,18 @@ Model performance, decreased, given that the neural network has a more difficult
 
 **Decreasing the learning rate**
 
+<img src="Lower learning rate.png" width="45%"> <img src="Lower learning rate loss.png" width="45%">
+
+
 
 **Decreasing the learning rate, but increasing the number of iterations**
+
+<img src="Fewer data points.png" width="45%"> <img src="Fewer data points loss.png" width="45%">
+
+
+**Increasing the noise**
+
+<img src="Fewer data points.png" width="45%"> <img src="Fewer data points loss.png" width="45%">
 
 
 
