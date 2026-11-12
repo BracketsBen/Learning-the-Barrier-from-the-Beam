@@ -46,6 +46,10 @@ Model performance, decreased, given that the neural network has a more difficult
 
 <img src="Fewer data points.png" width="45%"> <img src="Fewer data points loss.png" width="45%">
 
+**Decreasing the learning rate**
+
+
+
 
 
 
