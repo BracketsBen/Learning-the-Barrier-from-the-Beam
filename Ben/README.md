@@ -58,6 +58,8 @@ Here we have that decreasing the learning rate reduced the model performance. Th
 
 <img src="Lower learning rate higher steps.png" width="45%"> <img src="Lower learning rate higher steps loss.png" width="45%">
 
+This now improves the accuracy of the model, to beyond what we initially had. This is because there are now more iterations in order to get the desired change. The drawback is that it is more computationally expensive.
+
 
 **Increasing the noise**
 
