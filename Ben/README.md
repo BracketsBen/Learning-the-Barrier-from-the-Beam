@@ -28,6 +28,8 @@ The following plots refers to the values used in the code supplied.
 
 <img src="Figure_2.png" width="45%"> <img src="Figure_3.png" width="45%">
 
+Final test loss: 0.05883757
+
 Questions:
 - **Why should the initial W be random rather than 0?**
   All the neurons would end up holding the same value, eliminating the benefit of having many neurons in the first place
@@ -45,6 +47,8 @@ Model performance, decreased, given that the neural network has a more difficult
 **Decreasing the number of data points**
 
 <img src="Fewer data points.png" width="45%"> <img src="Fewer data points loss.png" width="45%">
+
+
 
 **Decreasing the learning rate**
 
