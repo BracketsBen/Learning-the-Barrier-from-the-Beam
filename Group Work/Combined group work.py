@@ -25,7 +25,7 @@ dVdy = jax.grad(V_true, argnums=1)
 def force(x,y):
     return jnp.array([-dVdx(x,y), -dVdy(x,y)])
 
-# 3 - Integrator
+# 3 - Integrator- Asa Chapman
 def rhs_fn(state):
     x, y, vx, vy = state
     return jnp.array([vx, vy, -dVdx(x,y), -dVdy(x,y)])
@@ -172,7 +172,7 @@ opt = optax.chain(clip, optax.adam(schedule))
   
 opt_state = opt.init(p_V)
 
-# 10. Training
+# 10. Training- Asa Chapman
 
 #optimiser state
 opt_state = opt.init(p_V)
@@ -209,7 +209,7 @@ plt.grid()
 plt.show()
 
 
-# 11. Diagnostics
+# 11. Diagnostics- Asa Chapman
 
 #make grid
 x_values = jnp.linspace(-L, L, 100)
