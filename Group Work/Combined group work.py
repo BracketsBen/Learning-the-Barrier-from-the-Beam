@@ -6,13 +6,13 @@ import matplotlib.pyplot as plt
 import optax
 import numpy as np
 
-# 1 - Setup
+# 1 - Setup - Max Shepherd
 L = 5.0
 vx0 = 3.0
 T, N_STEPS = 4.5, 80
 DT = T / N_STEPS
 
-# 2 - True Potential and Forces
+# 2 - True Potential and Forces - Max Shepherd
 # Defining the true potential from equation 5
 def V_true(x,y): 
     e1 = jnp.exp(-0.5 * (x ** 2 + (y + 1.5) ** 2) / (0.8 ** 2))
