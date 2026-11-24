@@ -23,7 +23,7 @@ x_data = jax.random.uniform(
 y_data = f(x_data)
 
 
-#splits of data- 70/15/15
+#splits of data- 70/15/15- however works better with 50/25/25 
 key, subkey = jax.random.split(key)
 
 indices = jax.random.permutation(subkey, N)
