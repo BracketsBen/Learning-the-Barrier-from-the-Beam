@@ -54,7 +54,7 @@ def integrate_traj(y0, vy0, rhs_fn):
     trajectory = jnp.concatenate((initial_state[None, :], states), axis=0)
     return trajectory
   
-# 4 - Exit data
+# 4 - Exit data - Ben Hammond
 def exit_state_from_traj(trajectory):
       # Find the index of the first time step when x > L 
       index = jnp.argmax(trajectory[:, 0] >= L)
@@ -158,7 +158,7 @@ def loss_fn(p_V):
 loss_value_and_grad = jax.value_and_grad(loss_fn)
 loss_value, gradients = loss_value_and_grad(p_V)
 
-#9. Optimiser
+#9. Optimiser - Ben Hammond
 
 schedule = optax.exponential_decay(
     init_value=1e-2,
