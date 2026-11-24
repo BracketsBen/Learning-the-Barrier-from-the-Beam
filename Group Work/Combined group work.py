@@ -69,7 +69,7 @@ def exit_state_from_traj(trajectory):
       exit_vy = (trajectory[index - 1, 3] * (1-ratio) + ratio * (trajectory[index, 3]))
       return jnp.array([exit_y, exit_vy])
 
-# 5 - Observations
+# 5 - Observations - Holly Attwell
 # Pick 100 particles 
 rng = np.random.default_rng()
 y0_values = jnp.asarray(rng.uniform(low = -3.5, high = 3.5, size = 100))
@@ -92,7 +92,7 @@ noise_vyvalues = jnp.asarray(rng.normal(loc = 0.0, scale = noise_vy, size = 100)
 observed_y_exit_values = true_y_exit_values + noise_yvalues
 observed_vy_exit_values = true_vy_exit_values + noise_vyvalues
 
-# 6 - Network potential
+# 6 - Network potential - Holly Attwell
 # Creates initial weights and biases
 def init_params(sizes):
     out = []
@@ -128,7 +128,7 @@ dVnetdy = jax.grad(V_net, argnums = 2)
 def force_net(p_V,x,y):
     return jnp.array([-dVnetdx(p_V,x,y), -dVnetdy(p_V,x,y)])
 
-# 7 - Predictions
+# 7 - Predictions - Holly Attwell
 # Predict the exit position and vertical velocity for one particle
 def predict_exit(y0, vy0, p_V):
     
@@ -143,7 +143,7 @@ def predict_exit(y0, vy0, p_V):
 predict_exitvalues_allparticles = jax.vmap(predict_exit, in_axes=(0, 0, None))
 predicted_exitvalues_allparticles = predict_exitvalues_allparticles(y0_values, vy0_values, p_V)
 
-# 8 - Loss
+# 8 - Loss - Holly Attwell
 def loss_fn(p_V):
     predicted_exitvalues_allparticles = predict_exitvalues_allparticles(y0_values, vy0_values, p_V)
     predicted_y = predicted_exitvalues_allparticles[:, 0]
